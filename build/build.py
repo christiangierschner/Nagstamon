@@ -189,7 +189,7 @@ def macmain():
 
     # Compress DMG
     subprocess.call(['hdiutil convert "Nagstamon {0} uncompressed".dmg '
-                     '-format UDZO -imagekey zlib-level=9 -o "Nagstamon {0}.dmg"'.format(VERSION)], shell=True)
+                     '-format UDZO -imagekey zlib-level=9 -o "Nagstamon {0}-silicon.dmg"'.format(VERSION)], shell=True)
 
     # Delete uncompressed DMG file as it is no longer needed
     os.unlink('Nagstamon {0} uncompressed.dmg'.format(VERSION))
